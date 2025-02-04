@@ -21,7 +21,9 @@ h2 {
   margin: 0;
 }
 figure {
-  margin: 0; /* resets the left margin in the figure*/
+  padding-top: 25px;
+  margin: 0;
+  padding-left: 250px; /* resets the left margin in the figure*/
 }
 
 figure img {
@@ -29,7 +31,7 @@ figure img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
 }
 figcaption {
-  font-size: 14px;
+  font-size: 10px;
   color: #555;
 }
 blockquote.left {
@@ -96,13 +98,13 @@ header a {
 /* Styles for individual header sections by class name. */
 
 .masthead {
-  background: url(../img/IMG_20150714_101239.jpg) no-repeat;
+  background: url(../img/IMG_0510.JPG) no-repeat;
   background-size: cover;
   background-attachment: fixed; /* the background image doesn't move when scrolling*/
   overflow: hidden;
 }
 .paris {
-  background: url(../img/Paris2013.jpg);
+  background: url(../img/brejo.png);
   background-size: cover;
   background-attachment: fixed;
 }
