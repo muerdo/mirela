@@ -1,16 +1,17 @@
 /* Import Google Web fonts */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic);
-
-
-body { /* sets the page defaults e.g. background and default typography */
-background: #fb8104;
-font-family: 'Noto Serif', serif;
-margin: 0;
-font-size: 20px;
-line-height: 1.5;
-color: rgba(0, 0, 0, 0.74);
+body {
+  /* Degradê mais intenso com laranja e amarelo */
+  background: linear-gradient(to bottom, #f02d04, #fb8104, #Fbab0a); /* Amarelo mais vibrante e laranja mais forte */
+  font-family: 'Noto Serif', serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.74);
 }
+
+
 
 header {
   font-family: 'Montserrat', sans-serif;
@@ -22,42 +23,43 @@ header {
 h2 {
   margin: 0;
   text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.7);
-  color: #c5400c;
+  color: #422703;
   font-size: 35px;
 }
 
 figure {
   padding-top: 25px;
   margin: 0;
-  padding-left: 150px;
-  size: 300px; /* resets the left margin in the figure*/
+  padding-left: 250px;
 }
 
 figure img {
-  max-width: 100%; /* images will shrink to fit inside the main conent column*/
+  max-width: 100%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
 }
+
 figcaption {
-  font-size: 10px;
-  color: #555;
-}
-bloskquote.left {
-    float: left;
-    margin: 0 1em 1em 0;
-    background: wheat;
-    padding: 1em;
-    font-size: 1.5em;
-    width: 33%;
-    position: relative;
+  font-size: 12px;
+  color: #161010;
 }
 
+bloskquote.left {
+  float: left;
+  margin: 0 1em 1em 0;
+  background: wheat;
+  padding: 1em;
+  font-size: 1.5em;
+  width: 33%;
+  position: relative;
+}
 
 .img_container, .color_conatiner {
-  height: 100vh; /* this sets the height of each full width image section to that of the viewport.*/
+  height: 100vh;
   position: relative;
   display: flex;
   background-position: center !important;
 }
+
 .video_container {
   display: block;
   position: relative;
@@ -72,17 +74,17 @@ bloskquote.left {
 .video_container header {
   position: absolute;
   text-align: center;
-height: 100vh;
-width: 100%;
+  height: 100vh;
+  width: 100%;
   top: 0;
 }
 
 .video_container header h1 {
   position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
 }
 
 header {
@@ -90,25 +92,28 @@ header {
   text-align: center;
   margin: auto;
 }
+
 header {
   color: #fff;
-  text-shadow:0 0 9px #000000;
+  text-shadow: 0 0 9px #000000;
 }
+
 header h1 {
   margin: 0;
   font-size: 8vw;
 }
+
 header a {
   color: white;
 }
-/* Styles for individual header sections by class name. */
 
 .masthead {
   background: url(../img/IMG_0510.JPG) no-repeat;
   background-size: cover;
-  background-attachment: fixed; /* the background image doesn't move when scrolling*/
+  background-attachment: fixed;
   overflow: hidden;
 }
+
 .paris {
   position: relative;
   background: url(../img/brejo.png);
@@ -116,7 +121,6 @@ header a {
   background-attachment: fixed;
 }
 
-/* Criando o efeito de blur no fundo da seção */
 .paris::before {
   content: "";
   position: absolute;
@@ -124,13 +128,11 @@ header a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: inherit; /* Usa a mesma imagem da seção */
-  filter: blur(40px); /* Aplica o efeito de desfoque */
+  background: inherit;
+  filter: blur(40px);
   z-index: 0;
 }
 
-
-/* Garantindo que o conteúdo fique acima do blur */
 .paris header {
   position: relative;
   z-index: 1;
@@ -138,6 +140,7 @@ header a {
   width: 75%;
   margin: auto;
 }
+
 .green_header {
   background: #bada55;
 }
@@ -152,22 +155,42 @@ header h1 {
   font-size: 6vw;
 }
 
-/* Text blocks */
 .content {
   margin: 0 auto;
   position: relative;
   overflow: visible;
   padding: 1em 20%;
 }
-footer {
 
-height: 100px;
-background: #000;
-color: #eee;
-text-align: center;
-padding: 1em;
+footer {
+  height: 100px;
+  background: #000;
+  color: #eee;
+  text-align: center;
+  padding: 1em;
 }
 
 video#foo {
   width: 100%;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
 }
