@@ -3,7 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic);
 body {
   /* Degradê mais intenso com laranja e amarelo */
-  background: linear-gradient(to bottom, #8b6f6a, #fb8104, #Fbab0a); /* Amarelo mais vibrante e laranja mais forte */
+  background: linear-gradient(to bottom, #686362, #fb8104, #Fbab0a); /* Amarelo mais vibrante e laranja mais forte */
   font-family: 'Noto Serif', serif;
   margin: 0;
   font-size: 20px;
