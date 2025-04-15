@@ -1,0 +1,31 @@
+{
+  "name": "por-tras-da-orla",
+  "version": "1.0.0",
+  "description": "Reportagem Longform sobre as percepções e impactos da Orla Domingos Canoeiro",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -p 8080",
+    "create-dirs": "mkdir -p dist/css dist/js dist/img",
+    "build:css": "postcss css/style.css -o dist/css/style.min.css && postcss css/mobile.css -o dist/css/mobile.min.css",
+    "build:js": "uglifyjs js/index.js -o dist/js/index.min.js && uglifyjs js/navbar.js -o dist/js/navbar.min.js && uglifyjs js/gallery.js -o dist/js/gallery.min.js && uglifyjs js/lazy-loading.js -o dist/js/lazy-loading.min.js",
+    "copy-html": "cp index.html dist/",
+    "copy-images": "cp -r img/* dist/img/",
+    "copy-owl": "mkdir -p dist/js/owl-carousel && cp -r js/owl-carousel/* dist/js/owl-carousel/",
+    "build": "npm run create-dirs && npm run build:css && npm run build:js && npm run copy-html && npm run copy-images && npm run copy-owl"
+  },
+  "keywords": [
+    "reportagem",
+    "longform",
+    "jornalismo"
+  ],
+  "author": "Mirella Carvalho",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "http-server": "^14.1.1",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0",
+    "uglify-js": "^3.17.4"
+  }
+}

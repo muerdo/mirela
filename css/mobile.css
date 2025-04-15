@@ -1,31 +1,230 @@
-/* This is the mobile responsive stylesheet */
+/* Mobile Responsive Stylesheet */
 
+/* Tablets and larger */
 @media only screen and (min-width: 768px) {
-    /* tablets and desktop */
+    .content-inner {
+        padding: 0 2rem;
+    }
+
+    figure {
+        padding-left: 0;
+    }
+
+    /* Footer adjustments for tablets */
+    .footer-content {
+        justify-content: space-around;
+    }
+
+    .footer-logo {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 2.5rem;
+    }
+
+    .footer-links, .footer-social {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
 }
 
-@media only screen and (max-width: 767px) {
-    /* phones */
-    .content {
-      margin: 0 auto;
-      position: relative;
+/* Small tablets and large phones */
+@media only screen and (max-width: 991px) {
+    html {
+        font-size: 95%;
+    }
 
-      padding: 1em;
+    .content {
+        padding: 3rem 0;
+    }
+
+    .img_container, .color_container {
+        height: 80vh;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    /* Footer adjustments for medium screens */
+    footer .container {
+        padding: 0 1.5rem;
+    }
+
+    .footer-content {
+        gap: 1.5rem;
+    }
+}
+
+/* All phones */
+@media only screen and (max-width: 767px) {
+    html {
+        font-size: 90%;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    /* Navbar Mobile Styles */
+    .navbar-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: var(--primary-color);
+        padding: 5rem 2rem 2rem;
+        transition: 0.3s ease-in-out;
+        z-index: 999;
+    }
+
+    .navbar-menu.active {
+        right: 0;
+    }
+
+    .navbar-menu ul {
+        flex-direction: column;
+    }
+
+    .navbar-menu ul li {
+        margin: 1rem 0;
+    }
+
+    .navbar-toggle {
+        display: block;
+        z-index: 1000;
+    }
+
+    /* Content Adjustments */
+    .content {
+        margin: 0 auto;
+        position: relative;
+        padding: 2rem 0;
+    }
+
+    .content-inner {
+        padding: 0 1.5rem;
     }
 
     blockquote.left {
-
-        margin: 0 1em 1em 0;
-        background: wheat;
-        padding: 1em;
-        font-size: 1.5em;
-        width: 90%;
-        position: relative;
+        float: none;
+        width: 100%;
+        margin: 2rem 0;
+        font-size: 1rem;
+        padding: 1.5rem;
     }
 
+    blockquote {
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
 
+    figure {
+        margin: 1.5rem 0;
+        padding-left: 0;
+    }
+
+    .img_container, .color_container {
+        height: 70vh;
+    }
+
+    header h1 {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    header h2 {
+        font-size: clamp(1rem, 4vw, 1.5rem);
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 1.5rem 1.5rem;
+    }
+
+    .gallery img {
+        height: 200px;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+        left: 10px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        right: 10px;
+    }
 }
 
-@media only screen and (max-width: 767px) and (orientation: portrait) {
-    /* portrait phones */
+/* Small phones */
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 85%;
+    }
+
+    .content {
+        padding: 1.5rem 0;
+    }
+
+    .content-inner {
+        padding: 0 1rem;
+    }
+
+    .img_container, .color_container {
+        height: 60vh;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    figure img {
+        width: 100%;
+    }
+
+    /* Footer adjustments for small phones */
+    footer {
+        padding: 3rem 0 1.5rem;
+    }
+
+    footer .container {
+        padding: 0 1rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer-logo, .footer-links, .footer-social {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-logo h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer-links h4, .footer-social h4 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-bottom {
+        padding-top: 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    .author-image {
+        width: 150px;
+        height: 150px;
+    }
 }

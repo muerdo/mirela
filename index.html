@@ -1,43 +1,71 @@
 <!DOCTYPE html>
-<html >
-  <head>
+<html lang="pt-br">
+<head>
     <meta charset="UTF-8">
-    <title>Por trás da Orla  </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Por trás da Orla</title>
 
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- Animate.css -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'>
 
-    <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+    <!-- ScrollMagic -->
     <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
-    <!--  Owl Stuff -->
-<link rel="stylesheet" href="js/owl-carousel/assets/owl.carousel.css">
-<link rel="stylesheet" href="js/owl-carousel/assets/owl.theme.default.min.css">
 
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="js/owl-carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="js/owl-carousel/assets/owl.theme.default.min.css">
 
-<!-- Include js plugin -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/text-layout.css">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
 
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/mobile.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="#">Por trás da Orla</a>
+            </div>
+            <div class="navbar-menu" id="navMenu">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#contexto">Contexto</a></li>
+                    <li><a href="#rio">O Rio</a></li>
+                    <li><a href="#historias">Histórias</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                </ul>
+            </div>
+            <div class="navbar-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
 
-
-  </head>
-
-  <body>
-
-<article>
-<section class="masthead img_container">
-
-<header>
-<h1>POR TRÁS DA ORLA </h1>
-<h2>Uma reportagem Longform sobre as percepções e impactos da<br>
-  Orla Domingos Canoeiro no bairro Amapá</h2>
-</header>
+    <article>
+<section id="inicio" class="masthead img_container">
+    <div class="overlay"></div>
+    <header class="animate__animated animate__fadeIn">
+        <h1>POR TRÁS DA ORLA</h1>
+        <h2>Uma reportagem Longform sobre as percepções e impactos da Orla Domingos Canoeiro no bairro Amapá</h2>
+        <a href="#contexto" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </header>
 </section>
 
-<section class="start content">
+<section id="contexto" class="content">
+    <div class="content-inner">
 
-  <h2>A luta por um lugar melhor para viver trouxe aos moradores do Bairro Amapá a esperança de terem suas necessidades atendidas, um sentimento que já predominava antes da entrega da tão esperada orla.</h2>
+        <h2 class="section-title">A luta por um lugar melhor</h2>
+        <p class="lead">A luta por um lugar melhor para viver trouxe aos moradores do Bairro Amapá a esperança de terem suas necessidades atendidas, um sentimento que já predominava antes da entrega da tão esperada orla.</p>
   <p>A orla do Bairro Amapá que leva o nome de Domingos Saraiva dos Santos, ou “Domingos Canoeiro”, é uma homenagem ao primeiro barqueiro do bairro. Em 23 de janeiro de 2020, a Câmara Municipal de Marabá aprovou o decreto legislativo que dá seu nome à Orla do bairro Amapá, às margens do Rio Itacaiúnas.  </p>
 
   <p>Conhecido por sua habilidade em conduzir pequenas embarcações e por sua relação com o rio Itacaiúnas, Domingos simboliza a relação dos moradores com as águas do rio. O decreto que oficializou a homenagem é um reconhecimento de uma memória coletiva que ainda se mantém nas conversas de quem vive ali. </p>
@@ -59,105 +87,66 @@
 
 
 <section class="paris img_container">
-<header>
-  <h2>Domingos Canoeiro reflete o passado ribeirinho do Bairro Amapá, Uma homenagem a viveu e representou esse modo de vida.
-    Hoje, a orla que leva seu nome é um símbolo de transformação não apenas na paisagem, mas na própria identidade do bairro. 
-    Antes esquecido pelo poder público, o cenário que consistia em barrancos, enchentes, Pequenos comércios e pela simplicidade 
-    de um cotidiano moldado pelo rio agora exibe Calçadas largas, quadras de esportes, parquinho, bancos, iluminação e câmeras de segurança. 
-    Para alguns, é o progresso chegando, para outros, a memória de um modo de vida que vai deixando de existir.
-
-  </h2>
-
-</header>
-
+    <div class="overlay"></div>
+    <header>
+        <h2 class="quote-header">Domingos Canoeiro reflete o passado ribeirinho do Bairro Amapá, uma homenagem a quem viveu e representou esse modo de vida. Hoje, a orla que leva seu nome é um símbolo de transformação não apenas na paisagem, mas na própria identidade do bairro.</h2>
+        <p class="quote-subheader">Antes esquecido pelo poder público, o cenário que consistia em barrancos, enchentes, pequenos comércios e pela simplicidade de um cotidiano moldado pelo rio agora exibe calçadas largas, quadras de esportes, parquinho, bancos, iluminação e câmeras de segurança. Para alguns, é o progresso chegando; para outros, a memória de um modo de vida que vai deixando de existir.</p>
+    </header>
 </section>
+<section id="historia" class="content">
+    <div class="content-inner">
+        <h3 class="section-title">Contexto histórico</h3>
+        <p class="lead">Para introduzir a realidade do bairro, é necessário compreender o contexto histórico de sua origem e os desdobramentos ao longo dos anos.</p>
+        <p>A dissertação de José Jonas Almeida, apresentada em 2008 na Universidade de São Paulo (USP), explora como os grandes projetos governamentais influenciaram no desenvolvimento de Marabá, facilitando o entendimento de como os bairros do município foram formados.</p>
 
-<section class="content">
+        <p>O bairro Amapá surgiu após a grande cheia de 1926 e, por estar em uma área mais elevada, era o local mais procurado pelas vítimas da enchente, já que, nessa época, existia apenas o bairro Francisco Coelho, popularmente conhecido como Cabelo Seco.</p>
 
-<h2>Contexto Histórico</h2>
-<div class="owl-carousel">
-  <div> <img src="img/Slider/IMG_2712.JPG" alt="" /> </div>
-  <div> <img src="img/Slider/IMG_2927.JPG" alt="" /> </div>
-  <div> <img src="img/Slider/IMG_2959.JPG" alt="" /> </div>
-</div>
+        <p>O novo bairro começou a atrair moradores de forma permanente a partir da década de 1970. Antes disso, era principalmente um refúgio temporário para famílias em busca de abrigo durante as cheias. No entanto, a região já possuía relevância histórica desde 1930, quando foi instalado um campo de pouso, que posteriormente daria lugar ao Aeroporto de Marabá - <a href="https://www.aenabrasil.com.br/pt/aeroportos/aeroporto-joao-correa-da-rocha/index.html" target="_blank">João Corrêa da Rocha.</a></p>
 
-<h3>
-  Para introduzir a realidade do bairro, é necessário compreender o contexto histórico de sua origem e os desdobramentos ao longo dos anos
-</h3>
-  <p>A dissertação de José Jonas Almeida, apresentada em 2008 na Universidade de São Paulo (USP), explora como os grandes projetos governamentais influenciaram no desenvolvimento de Marabá, facilitando o entendimento de como os bairros do município foram formados.
-  </p>
+        <p>Marabá foi alvo de uma série de planos diretórios que visavam dar condições para que a cidade suportasse a explosão migratória que estava prestes a acontecer com a implantação da mina de Carajás, já que era área de influência da Rodovia Transamazônica (BR-230) inaugurada em 1972. A rodovia foi importante para a integração da Amazônia com o norte do país, considerado um marco de desenvolvimento e infraestrutura na ditadura militar durante o governo do presidente Emílio Garrastazu Médici.</p>
+        <figure>
+            <img src="img/maps.jpeg" alt="Mapa da Rodovia Transamazônica" />
+            <figcaption>Mapa da Rodovia Transamazônica (BR-230) - <a href="https://www.google.com/maps/dir/Cabedelo+-+Jacar%C3%A9,+Cabedelo+-+PB/L%C3%A1brea,+AM/@-13.5507444,-58.2430575,4.5z/data=!4m14!4m13!1m5!1m1!1s0x7acde3e4b4747a9:0xbcdd1cad79eabb22!2m2!1d-34.8430206!2d-7.0402944!1m5!1m1!1s0x922f93c3890572a5:0x876757d706edee29!2m2!1d-64.7965384!2d-7.2637806!3e9?entry=ttu&g_ep=EgoyMDI1MDIxMC4wIKXMDSoASAFQAw%3D%3D">Ver no Google Maps</a></figcaption>
+        </figure>
+        <p>Para solucionar o problema das enchentes, o Plano Diretor Integrado, elaborado pela Superintendência de Desenvolvimento Regional e baseado nas orientações do extinto Serviço Federal de Habitação e Urbanismo (SERFHAU) previa a criação do novo núcleo urbano, a Nova Marabá.</p>
 
-<p>
-  O bairro Amapá surgiu após a grande cheia de 1926 e, por estar em uma área mais elevada, era o local mais procurado pelas vítimas da enchente, já que, nessa época, existia apenas o bairro Francisco Coelho, popularmente conhecido como Cabelo Seco. 
-</p>
-  <p>O novo bairro começou a atrair moradores de forma permanente a partir da década de 1970. Antes disso, era principalmente um refúgio temporário para famílias em busca de abrigo durante as cheias. No entanto, a região já possuía relevância histórica desde 1930, quando foi instalado um campo de pouso, que posteriormente daria lugar ao Aeroporto de Marabá - <a href="https://www.aenabrasil.com.br/pt/aeroportos/aeroporto-joao-correa-da-rocha/index.html" target="_blank">João Corrêa da Rocha.</a>   
-  </p>
-    <p>Marabá foi alvo de uma série de planos diretórios que visavam dar condições para que a cidade suportasse a explosão migratória que estava prestes a acontecer com a implantação da mina de Carajás, já que era área de influência da Rodovia Transamazônica (BR-230) inaugurada em 1972. A rodovia foi importante para a integração da Amazônia com o norte do país, considerado um marco de desenvolvimento e infraestrutura na ditadura militar durante o governo do presidente Emílio Garrastazu Médici. 
+        <p>A cidade foi submetida a grandes transformações urbanísticas para atender as políticas de integração, dentre elas, a que talvez mais impactou a forma de desenvolvimento do município, a criação da Nova Marabá. Marabá, então, deixava de ter características de uma comunidade ribeirinha e passava a um centro urbano promissor.</p>
+        <p>Pesquisadores defendem que o plano não levou em consideração o estilo de vida ribeirinho dos residentes do município, até então, não existiam muitos carros e a maior parte dos percursos eram feitos a pé ou de barco. A mudança imposta de forma rápida e radical não se importava com as atividades econômicas como o extrativismo e a navegação fluvial, sequer havia perspectiva de que essas atividades continuassem a existir.</p>
 
-</p>
-<figure>
-  <img src="img/maps.jpeg" alt="" />
-  <figcaption> <a href="https://www.google.com/maps/dir/Cabedelo+-+Jacar%C3%A9,+Cabedelo+-+PB/L%C3%A1brea,+AM/@-13.5507444,-58.2430575,4.5z/data=!4m14!4m13!1m5!1m1!1s0x7acde3e4b4747a9:0xbcdd1cad79eabb22!2m2!1d-34.8430206!2d-7.0402944!1m5!1m1!1s0x922f93c3890572a5:0x876757d706edee29!2m2!1d-64.7965384!2d-7.2637806!3e9?entry=ttu&g_ep=EgoyMDI1MDIxMC4wIKXMDSoASAFQAw%3D%3D"> link do mapa</a>
-  </figcaption>
-  </figure>
-<p>
-  Para solucionar o problema das enchentes, o Plano Diretor Integrado, elaborado pela Superintendência de Desenvolvimento Regional e baseado nas orientações do extinto Serviço Federal de Habitação e Urbanismo (SERFHAU) previa a criação do novo núcleo urbano, a Nova Marabá. 
-
-</p>
-
-<p>
-  A cidade foi submetida a grandes transformações urbanísticas para atender as políticas de integração, dentre elas, a que talvez mais impactou a forma de desenvolvimento do município, a criação da Nova Marabá. Marabá, então, deixava de ter características de uma comunidade ribeirinha e passava a um centro urbano promissor. 
-
-</p>
-<p>Pesquisadores defendem que o plano não levou em consideração o estilo de vida ribeirinho dos residentes do município, até então, não existiam muitos carros e a maior parte dos percursos eram feitos a pé ou de barco. A mudança imposta de forma rápida e radical não se importava com as atividades econômicas como o extrativismo e a navegação fluvial, sequer havia perspectiva de que essas atividades continuassem a existir. 
-</p>
-<p>O plano contava que com a construção de um novo núcleo, os moradores da Marabá Pioneira e de outros aglutinados seriam despertados pelo interesse de se mudar para nova e promissora área, mas não foi isso que aconteceu, mesmo após a cheia histórica de 1980. 
-</p>
-<br>
+        <p>O plano contava que com a construção de um novo núcleo, os moradores da Marabá Pioneira e de outros aglutinados seriam despertados pelo interesse de se mudar para nova e promissora área, mas não foi isso que aconteceu, mesmo após a cheia histórica de 1980.</p>
 <blockquote class="left">
   “A expansão e a ocupação do bairro Amapá se acelerou em direção ao vale do rio Itacaiúnas, formando outros bairros entre 1974 e 1977, como Novo Horizonte, Parque das Laranjeiras, Jardim Belo Horizonte e o núcleo instalado pelo INCRA para os seus funcionários. Essa expansão deu origem ao Complexo Integrado Cidade Nova, localizado em área mais elevada e segura com relação às enchentes. Era a tendência que se apresentava para a expansão de Marabá, uma vez esgotada a ocupação da área urbana original no núcleo pioneiro, que mesmo assim, ainda era procurada por algumas famílias de migrantes”
-  (trecho retirado da <a href="https://www.teses.usp.br/teses/disponiveis/8/8137/tde-05022009-121639/pt-br.php" target="_blank">dissertação)</a> 
-  
+  (trecho retirado da <a href="https://www.teses.usp.br/teses/disponiveis/8/8137/tde-05022009-121639/pt-br.php" target="_blank">dissertação)</a>
+
 </blockquote>
 </section>
   <section class="content">
-  <p>
-    Com a apresentação do plano, foi sugerido que parassem os investimentos nessas áreas que estavam crescendo de forma desenfreada, o foco agora era a construção da Nova Marabá. 
-  
+    <div class="content-inner">
+      <h3 class="section-title">Desenvolvimento urbano</h3>
+      <p>Com a apresentação do plano, foi sugerido que parassem os investimentos nessas áreas que estavam crescendo de forma desenfreada, o foco agora era a construção da Nova Marabá.</p>
 
+      <p>Mesmo diante da pressão popular, o plano de desenvolvimento optou por não implantar a Nova Marabá na área de expansão da Cidade Nova, que poderia ter sido essencial para minimizar as deficiências urbanísticas por meio de investimentos adequados.</p>
 
-  Mesmo diante da pressão popular, o plano de desenvolvimento optou por não implantar a Nova Marabá na área de expansão da Cidade Nova, que poderia ter sido essencial para minimizar as deficiências urbanísticas por meio de investimentos adequados.
+      <p>Como consequência, o Complexo Cidade Nova cresceu rapidamente, sem que a Administração Pública conseguisse atender suas demandas estruturais e sociais.</p>
 
+      <p>Nesse período, estima-se que o Bairro Amapá já abrigava cerca de cinco mil moradores. Apesar de seu potencial e da valorização por parte da população marabaense, o bairro continuou a se expandir de forma desordenada, sofrendo com a falta de serviços essenciais como água, esgoto e eletricidade.</p>
 
-
-
-  Como consequência, o Complexo Cidade Nova cresceu rapidamente, sem que a Administração Pública conseguisse atender suas demandas estruturais e sociais.
-
-</p>
-
-<p>
-  Nesse período, estima-se que o Bairro Amapá já abrigava cerca de cinco mil moradores. Apesar de seu potencial e da valorização por parte da população marabaense, o bairro continuou a se expandir de forma desordenada, sofrendo com a falta de serviços essenciais como água, esgoto e eletricidade.
-  
-</p>
-<p>Esses problemas persistiram por muitos anos.</p>
+      <p>Esses problemas persistiram por muitos anos, afetando diretamente a qualidade de vida dos moradores e o desenvolvimento da região.</p>
+    </div>
   </section>
 
 
-  
+
 
 <section class="content">
-  <h1>Falta perspectiva quando não se tem resposta
-  </h1>
-  <p>
-    O bairro Amapá convive com o descaso do poder público desde a sua fundação. Esse histórico de negligência está registrado em documentos oficiais, livros, reportagens e, sobretudo, na memória dos moradores. Durante anos, a comunidade enfrentou — e ainda enfrenta — a ausência de serviços essenciais, como saneamento básico, abastecimento de água, energia elétrica, infraestrutura adequada e segurança, elementos indispensáveis para garantir a dignidade da população.
+    <div class="content-inner">
+        <h2 class="section-title">Falta perspectiva quando não se tem resposta</h2>
 
-  </p>
-  <p>
-    Além de lidar com o esquecimento histórico do poder público, os moradores do Bairro Amapá enfrentaram outro desafio: os demais bairros discriminavam fortemente os amapaenses. Esse preconceito foi agravado por um histórico de altos índices de <a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hanseniase" target="_blank"> hanseníase</a>  na região, uma doença que, embora tenha tratamento e cura disponíveis, ainda carrega um estigma social significativo.
+        <p>O bairro Amapá convive com o descaso do poder público desde a sua fundação. Esse histórico de negligência está registrado em documentos oficiais, livros, reportagens e, sobretudo, na memória dos moradores. Durante anos, a comunidade enfrentou — e ainda enfrenta — a ausência de serviços essenciais, como saneamento básico, abastecimento de água, energia elétrica, infraestrutura adequada e segurança, elementos indispensáveis para garantir a dignidade da população.</p>
 
-  </p>
-<p>A hanseníase, também conhecida como lepra, é uma condição que pode levar à exclusão social devido à desinformação e aos preconceitos associados a ela. Segundo o Ministério da Saúde, a doença provoca impactos não apenas na saúde física, mas também no convívio social das pessoas diagnosticadas, limitando suas interações e aumentando o isolamento.
-</p>
+        <p>Além de lidar com o esquecimento histórico do poder público, os moradores do Bairro Amapá enfrentaram outro desafio: os demais bairros discriminavam fortemente os amapaenses. Esse preconceito foi agravado por um histórico de altos índices de <a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hanseniase" target="_blank">hanseníase</a> na região, uma doença que, embora tenha tratamento e cura disponíveis, ainda carrega um estigma social significativo.</p>
+
+        <p>A hanseníase, também conhecida como lepra, é uma condição que pode levar à exclusão social devido à desinformação e aos preconceitos associados a ela. Segundo o Ministério da Saúde, a doença provoca impactos não apenas na saúde física, mas também no convívio social das pessoas diagnosticadas, limitando suas interações e aumentando o isolamento.</p>
 
 
 <p>“As pessoas se referiam ao Amapá como favela. A gente se sentia assim, porque antigamente tinha um índice muito alto de hanseníase. Por causa disso, éramos vistos com outros olhos”, relembra Rosilene Viana, aposentada que vive no bairro há 50 anos. Ela lembra que os moradores da “baixada”, a parte baixa do bairro localizada às margens do rio Itacaiúnas, eram os que mais sofriam discriminação. Historicamente, a parte alta foi mais valorizada, pois não enfrenta inundações causadas pela cheia dos rios.
@@ -184,7 +173,7 @@
 
 <p>No entanto, ao longo dos anos, a estação foi alvo de constantes denúncias, como destaca uma matéria do Correio de Carajás intitulada <a href="https://correiodecarajas.com.br/estacao-da-cosanpa-ja-deu-o-que-tinha-que-dar/" target="_blank">"Estação da Cosanpa já deu o que tinha que dar"</a>  .  Embora algumas reclamações ainda persistam, a maioria dos problemas foi solucionada ou, pelo menos, deixou de afetar os moradores com a mesma intensidade de antes.
 </p>
-<p>A precariedade das ruas já não é mais criticada pelos residentes como antes. Elas melhoraram significativamente após a obra de pavimentação em 2020. “Hoje eu sou aposentada e vejo o quanto a minha qualidade de vida está melhor. Esse asfalto aqui para a gente foi uma bênção… aqui a gente era esquecido”, salienta Rosilene. 
+<p>A precariedade das ruas já não é mais criticada pelos residentes como antes. Elas melhoraram significativamente após a obra de pavimentação em 2020. “Hoje eu sou aposentada e vejo o quanto a minha qualidade de vida está melhor. Esse asfalto aqui para a gente foi uma bênção… aqui a gente era esquecido”, salienta Rosilene.
 </p>
 <p>Em 2010, o Bairro Amapá já contava com um box da polícia militar, iniciativa que contribuiu para o controle da criminalidade na região. "Antigamente, havia algumas casas ali onde hoje é a orla, e aquele ‘baixão’ era só mato. Aqui era um ponto de drogas, na verdade. A droga imperava, mas a realidade mudou muito", relata Maria Claudete, moradora e dona de uma mercearia próxima à orla. Ela destaca que a segurança na área melhorou significativamente. "A segurança melhorou 100%, polícia aqui não falta, é uma coisa que realmente não falta", acrescenta.
 </p>
@@ -196,7 +185,7 @@
     <img src="img/Janeiro roxo simples campanha luta contra hanseníase post do instagram.png" alt=""
          style="width: 400px; height: auto; display: block;"/>
     <figcaption style="text-align: center; font-size: 14px; color: #555;">
-    
+
     </figcaption>
   </figure>
 
@@ -205,12 +194,11 @@
   </blockquote>
 </div>
 
-<section class="content">
-  <h1>Relação com o rio
-
-  </h1>
+<section id="rio" class="content">
+    <div class="content-inner">
+        <h2 class="section-title">Relação com o rio</h2>
 <p>
-  O Rio Itacaiúnas é mais do que um curso d’água, é parte da memória coletiva, que desde a fundação do bairro é fonte de sustento e lazer. O rio foi fundamental para a formação e desenvolvimento de Marabá, influenciando a vida e as práticas sociais de seus habitantes. 
+  O Rio Itacaiúnas é mais do que um curso d’água, é parte da memória coletiva, que desde a fundação do bairro é fonte de sustento e lazer. O rio foi fundamental para a formação e desenvolvimento de Marabá, influenciando a vida e as práticas sociais de seus habitantes.
 
 </p>
 <p>
@@ -221,11 +209,11 @@
   A bacia recebe esse nome por ser atravessada pelo Rio Itacaiúnas, seu principal curso d’água. Trata-se de um rio de domínio estadual, pois todo o seu percurso, desde a nascente até a foz, ocorre dentro do território paraense.
 
 </p>
-<p>A história do bairro Amapá pautada em transformações e desafios, reflete a relação entre a comunidade e o meio ambiente, a conexão da população com o rio Itacaiunas é complexa, e vai além dos aspectos econômicos, abrangendo também relações sócio-culturais. 
+<p>A história do bairro Amapá pautada em transformações e desafios, reflete a relação entre a comunidade e o meio ambiente, a conexão da população com o rio Itacaiunas é complexa, e vai além dos aspectos econômicos, abrangendo também relações sócio-culturais.
 </p>
 <p>Para Vitor Rodrigues, de 16 anos, o rio foi o palco de suas brincadeiras de infância. Para Domingos Pereira Marinho, o barqueiro mais antigo em atividade da região, é o sustento de sua família há mais de uma década. Mas, com o tempo, a relação da comunidade com o rio mudou, trazendo novos desafios e oportunidades.
 </p>
-<div style="display: flex; align-items: center; justify-content: center; gap: 20px; text-align: ; flex-wrap: wrap;">
+<div style="display: flex; align-items: center; justify-content: center; gap: 20px; text-align: center; flex-wrap: wrap;">
   <figure style="margin: 0;padding-left: 25px; ">
     <img src="img/VITOR.JPG" alt=""
          style="width: 800px; height: auto; display: block;"/>
@@ -235,13 +223,13 @@
   </figure>
 <p>Desde criança, Vitor Rodrigues, vive no Bairro Amapá e lembra com saudade da época em que as águas eram um espaço de diversão e descoberta. “Antigamente, essa parte do bairro era um barranco, não tinha outro lazer senão o rio”, conta. Para ele, a construção trouxe uma nova cara para o bairro. No entanto, ele lamenta o descaso com a manutenção do local. "Está tudo pixado e quebrado. As pessoas precisam valorizar mais esse espaço", desabafa.
 </p>
-<p>Enquanto Vitor reflete sobre as mudanças no bairro, Domingos tem uma perspectiva diferente. Para ele, o rio não é apenas um lugar de lazer, mas uma fonte de sustento. "Quando comecei, aqui era só matagal. Era muito feio. Hoje, com a Orla, melhorou mil por cento", afirma. Apesar de não morar no bairro, ele reconhece a importância da obra para a comunidade e para quem, como ele, depende do rio para trabalhar. Ele conta que no dia a dia a procura pelas embarcações é pouca, mas que aumenta em datas comemorativas, como o natal. 
+<p>Enquanto Vitor reflete sobre as mudanças no bairro, Domingos tem uma perspectiva diferente. Para ele, o rio não é apenas um lugar de lazer, mas uma fonte de sustento. "Quando comecei, aqui era só matagal. Era muito feio. Hoje, com a Orla, melhorou mil por cento", afirma. Apesar de não morar no bairro, ele reconhece a importância da obra para a comunidade e para quem, como ele, depende do rio para trabalhar. Ele conta que no dia a dia a procura pelas embarcações é pouca, mas que aumenta em datas comemorativas, como o natal.
 </p>
-<p>A construção da primeira ponte sobre o rio, em 1980, foi um marco e mudou a dinâmica da população com o rio, já que diminuiu a procura pelas pequenas embarcações, que, anos antes, tinham sido o principal meio de transporte de quem vivia em Marabá. Porém, as viagens de canoinhas ainda existem e uma pequena parcela da população ainda usa, inclusive, a renda advinda dessas viagens é o principal meio de sobrevivência de alguns barqueiros que ainda se encontram no antigo Porto das Canoinhas, como é o caso de Seu Domingos. 
+<p>A construção da primeira ponte sobre o rio, em 1980, foi um marco e mudou a dinâmica da população com o rio, já que diminuiu a procura pelas pequenas embarcações, que, anos antes, tinham sido o principal meio de transporte de quem vivia em Marabá. Porém, as viagens de canoinhas ainda existem e uma pequena parcela da população ainda usa, inclusive, a renda advinda dessas viagens é o principal meio de sobrevivência de alguns barqueiros que ainda se encontram no antigo Porto das Canoinhas, como é o caso de Seu Domingos.
 </p>
 <p>Para o barqueiro, a estrutura atual já é suficiente, mas ele ressalta que o pedido da população por uma rampa melhor para acesso ao rio foi essencial. “Ficou muito bom para nós. Já teve gente falando que está mal feito, mas acho que está ótimo, porque já foi pior”, relembra.
 </p>
-<div style="display: flex; align-items: center; justify-content: center; gap: 20px; text-align: ; flex-wrap: wrap;">
+<div style="display: flex; align-items: center; justify-content: center; gap: 20px; text-align: center; flex-wrap: wrap;">
   <figure style="margin: 0; padding-left: 25px;">
     <img src="img/barqueiro.JPG" alt=""
          style="width: 800px; height: auto; display: block;"/>
@@ -251,36 +239,37 @@
   </section>
 
   <section class="content">
-    <h1>A época de cheia
-    </h1>
+    <div class="content-inner">
+      <h1>A época de cheia</h1>
     <p>PA cheia do rio Itacaiúnas é outro marco para os moradores e visitantes do Bairro Amapá. Em 2022, o rio chegou a marcar 13 metros durante as cheias mais críticas dos últimos 20 anos, de acordo com a Defesa Civil do município. As cheias transformam a paisagem e atrai visitantes para a Orla Domingos Canoeiro, que se torna um ponto de encontro e diversão.
     </p>
-    <p>A Orla possui um papel crucial na proteção da costa contra a erosão e impede de forma circunstancial a invasão do rio. No entanto, durante as cheias, ela se transforma em um verdadeiro palco de festividades. 
+    <p>A Orla possui um papel crucial na proteção da costa contra a erosão e impede de forma circunstancial a invasão do rio. No entanto, durante as cheias, ela se transforma em um verdadeiro palco de festividades.
     </p>
     <p>Wilsa, moradora local, lembra da última cheia, ocorrida em 2022. "Foi uma maravilha. Quando encheu, veio gente de todo canto para tomar banho, pular da rampa e se divertir", relata a moradora, que diz até esquecer dos estragos causados nas casas pela alta dos rios. Wilsa conta ainda que esses momentos trazem de volta lembranças de quando ela mesma, quando criança, brincava nas águas do rio.
     </p>
     <p>Os relatos de Vitor, Domingos e Wilsa mostram que o rio Itacaiúnas e a Orla Domingos Canoeiro vão além dos espaços físicos, são parte da identidade do Bairro Amapá. Enquanto o progresso trouxe novas oportunidades, como a construção da Orla e a atração de visitantes durante as cheias, também trouxe desafios, como a necessidade de maior cuidado e valorização do espaço.
     </p>
+    </div>
   </section>
 
 
-  <section class="content">
-    <h1>Do barro à orla: a memória viva de Wilsa Clelia no bairro Amapá 
-   </h1>
+  <section id="historias" class="content">
+    <div class="content-inner">
+        <h2 class="section-title">Do barro à orla: a memória viva de Wilsa Clelia</h2>
   <p>Desde o tempo em que somente os cavalos cruzavam as ruas de lama até a inauguração da Orla Domingos Canoeiro, Wilsa Clelia Fragas Carvalho viu o bairro Amapá crescer, mudar e transformar vidas. Moradora do bairro desde criança, ela conta histórias que misturam resistência, desafios e conquistas em um cenário que agora atrai moradores e visitantes.
   </p>
   <p>O bairro Amapá, um dos mais antigos de Marabá, é repleto de histórias que revelam a essência de seus moradores. Entre elas, está a trajetória de Dona Wilsa Clelia, de 69 anos.</p>
-<p>Wilsa nasceu na Marabá Pioneira, mas foi no Amapá que cresceu, estudou, se formou, trabalhou e criou seus filhos e netos. Morou em Brasília em um curto período da sua vida, mas retornou para o lugar em que sente ser a sua casa.  
+<p>Wilsa nasceu na Marabá Pioneira, mas foi no Amapá que cresceu, estudou, se formou, trabalhou e criou seus filhos e netos. Morou em Brasília em um curto período da sua vida, mas retornou para o lugar em que sente ser a sua casa.
 </p>
-<p>“Aqui era triste. Passava só cavalo e a lama era demais, não tinha uma estradinha pra gente caminhar”. É assim que o bairro é tido na memória de Wilsa. A moradora reforça que a pavimentação e a construção da orla trouxe benefícios inimagináveis para ela e para sua família, em especial para seus netos. 
+<p>“Aqui era triste. Passava só cavalo e a lama era demais, não tinha uma estradinha pra gente caminhar”. É assim que o bairro é tido na memória de Wilsa. A moradora reforça que a pavimentação e a construção da orla trouxe benefícios inimagináveis para ela e para sua família, em especial para seus netos.
 </p>
-<p>Wilsa foi uma menina esforçada, filha adotiva de um homem que, segundo ela, era um bom pai, mas era racista. O preconceito sofrido dentro e fora de casa refletiu em diversas áreas de sua vida, e, até hoje, custa perdoá-lo. Mãe solo de 6 filhas, viu nos estudos uma oportunidade para tentar uma vida melhor, fez contabilidade, magistério, prestou concurso para prefeitura de Marabá e cursou duas licenciaturas na Universidade Estadual do Pará (UEPA). Ela relembra, emocionada, das diversas vezes em que esperava uma colega branca da turma para atravessar a transamazônica para ir à faculdade, já que se fosse sozinha, os carros sequer paravam. 
+<p>Wilsa foi uma menina esforçada, filha adotiva de um homem que, segundo ela, era um bom pai, mas era racista. O preconceito sofrido dentro e fora de casa refletiu em diversas áreas de sua vida, e, até hoje, custa perdoá-lo. Mãe solo de 6 filhas, viu nos estudos uma oportunidade para tentar uma vida melhor, fez contabilidade, magistério, prestou concurso para prefeitura de Marabá e cursou duas licenciaturas na Universidade Estadual do Pará (UEPA). Ela relembra, emocionada, das diversas vezes em que esperava uma colega branca da turma para atravessar a transamazônica para ir à faculdade, já que se fosse sozinha, os carros sequer paravam.
 </p>
-<p>Vivendo em um ambiente marginalizado, custou se ver longe dessa realidade, mas, hoje, diz olhar pra trás e reconhecer que fez uma boa trajetória, mesmo com tantas dificuldades. 
+<p>Vivendo em um ambiente marginalizado, custou se ver longe dessa realidade, mas, hoje, diz olhar pra trás e reconhecer que fez uma boa trajetória, mesmo com tantas dificuldades.
 </p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
   <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-    src="https://www.youtube.com/embed/o-CsImm7N64" 
+    src="https://www.youtube.com/embed/o-CsImm7N64"
     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
   </iframe>
 </div>
@@ -291,7 +280,7 @@
 </p>
 <p>Desde a inauguração do espaço, os moradores passaram a utilizá-lo para confraternizações e celebrações. Wilsa relembra com carinho uma festa especial dedicada aos primeiros moradores formados como professores do bairro.
 </p>
-<p>“A gente convidou as amigas para venderem as coisas que sabiam fazer. Tinha costureira, artesãs... eu também sou costureira, trabalho com artesanato, faço tapetes com tampas, tudo que você imaginar de arte. Foi muito bom. Tinha professores, muita gente envolvida”, recorda. 
+<p>“A gente convidou as amigas para venderem as coisas que sabiam fazer. Tinha costureira, artesãs... eu também sou costureira, trabalho com artesanato, faço tapetes com tampas, tudo que você imaginar de arte. Foi muito bom. Tinha professores, muita gente envolvida”, recorda.
 </p>
 <p>Com o passar dos anos, a resiliência dos moradores foi sendo recompensada. Wilsa viu o bairro se transformar: de um local vulnerável às cheias para um espaço de oportunidades e crescimento. A construção da Orla trouxe infraestrutura e um novo sentido de vida.
 </p>
@@ -302,22 +291,20 @@
 
 </section>
 <section class="content">
-  <h1>Quem vê de fora
- </h1>
- <p>A construção da Orla Domingos Canoeiro ainda enfrenta desafios para se tornar um espaço plenamente utilizado pela comunidade. Quem vê de fora ainda acha que o espaço é pouco explorado e quase não é visto pela população marabaense. 
-</p>
-<p>Adriane Pinho, atual diretora da Fundação de Assistência à Criança e ao Adolescente (Funcad), destaca que a construção da Orla representa um marco de progresso para o bairro Amapá. Para ela, o espaço além de melhorar a infraestrutura local trouxe mudanças significativas no âmbito cultural e social da comunidade. 
-</p>
-<p>A participação de entidades sociais no bairro é muito forte, a fundação existe no bairro desde 1998 e acompanha de perto as dificuldades sofridas pelos moradores, em especial daqueles que mais utilizam dos serviços da fundação, a população mais carente.  
-</p>
+  <div class="content-inner">
+    <h1>Quem vê de fora</h1>
+    <p>A construção da Orla Domingos Canoeiro ainda enfrenta desafios para se tornar um espaço plenamente utilizado pela comunidade. Quem vê de fora ainda acha que o espaço é pouco explorado e quase não é visto pela população marabaense.</p>
 
-<figure>
-  <img src="img/Amapá 002.jpg" alt="" />
-  <figcaption>Fonte: Jornal Correio do Tocatins (2010)
-  </figcaption>
-  </figure>
+    <p>Adriane Pinho, atual diretora da Fundação de Assistência à Criança e ao Adolescente (Funcad), destaca que a construção da Orla representa um marco de progresso para o bairro Amapá. Para ela, o espaço além de melhorar a infraestrutura local trouxe mudanças significativas no âmbito cultural e social da comunidade.</p>
 
-  <p>A Funcad acaba não usando com frequência o ambiente para suas atividades, já que possuem  um bom espaço na sua instalação, mas a diretora ressalta que a área de lazer e convivência abriu novas possibilidades para atividades voltadas às crianças e adolescentes, promovendo um ambiente mais saudável e integrado. “Apesar dos avanços, ainda há desafios a serem superados para que a orla alcance todo o seu potencial como ponto de encontro comunitário”, destaca. 
+    <p>A participação de entidades sociais no bairro é muito forte, a fundação existe no bairro desde 1998 e acompanha de perto as dificuldades sofridas pelos moradores, em especial daqueles que mais utilizam dos serviços da fundação, a população mais carente.</p>
+
+    <figure>
+      <img src="img/Amapá 002.jpg" alt="Registro histórico do bairro Amapá" />
+      <figcaption>Fonte: Jornal Correio do Tocatins (2010)</figcaption>
+    </figure>
+
+  <p>A Funcad acaba não usando com frequência o ambiente para suas atividades, já que possuem  um bom espaço na sua instalação, mas a diretora ressalta que a área de lazer e convivência abriu novas possibilidades para atividades voltadas às crianças e adolescentes, promovendo um ambiente mais saudável e integrado. “Apesar dos avanços, ainda há desafios a serem superados para que a orla alcance todo o seu potencial como ponto de encontro comunitário”, destaca.
   </p>
   <p>A falta de eventos regulares e o baixo fluxo de pessoas, especialmente à noite, são alguns problemas apontados pela diretora. Ela não é moradora do bairro, mas trabalha e tem contato diário com as crianças e adolescentes que fazem parte da fundação e são diretamente afetados. Além disso, Adriane aborda a cultura do tráfico e como isso ainda limita a utilização comunitária do espaço. "A cultura do tráfico é muito enraizada aqui e, por isso, eles acabam dominando a área. Se a Orla for mais vista, pode atrair mais gente e ajudar a combater essa força”, ressalta.
 
@@ -327,42 +314,84 @@
   </p>
   <p>A construção da Orla Domingos Canoeiro é vista pela comunidade como um reflexo de progresso e oportunidade para o bairro, mas a plena realização de seu potencial depende do engajamento dos próprios moradores. Para Adriane, o envolvimento comunitário é essencial para que o espaço se consolide como um centro de convivência e desenvolvimento social. “É só o começo, vamos ver como será com as próximas políticas”, conclui.
   </p>
- <p>
-  E diante da dúvida que persiste: como transformar esse espaço em um verdadeiro ponto de encontro e pertencimento para a comunidade?
- </p>
- <h2 style="text-align: center; margin-top: 40px;">Acervo de Fotos</h2>
- <div class="gallery">
-   <img src="img/IMG_0510.JPG" alt="Trabalho 1">
-   <img src="img/IMG_0603.JPG" alt="Trabalho 2">
-   <img src="img/brejo.png" alt="Trabalho 3">
-   <img src="img/Amapá 002.jpg" alt="Trabalho 4">
-   <img src="img/figura 1.png" alt="Trabalho 5">
-   <img src="img/figura 2.jpg" alt="Trabalho 6">
-   <img src="img/figura 3 .png" alt="Trabalho 5">
-   <img src="img/figura 4 .png" alt="Trabalho 6">
-   <img src="img/figura 5.jpeg" alt="Trabalho 5">
-   <img src="img/figura 6.jpeg" alt="Trabalho 6">
-   <img src="img/jornal 2010.jpg" alt="Trabalho 6">
-   <img src="img/IMG_0570.JPG" alt="Trabalho 6">
-   <img src="img/IMG_0522.JPG" alt="Trabalho 6">
-   <img src="img/IMG_0565.JPG" alt="Trabalho 6">
-   <img src="img/correio 1997.png" alt="Trabalho 6">
-   <img src="img/2011.png" alt="Trabalho 6">
  
  </div>
+</section>
+ <section id="galeria" class="content">
+    <div class="content-inner">
+        <h2 class="section-title" style="text-align: center;">Acervo de Fotos</h2>
+        <div class="gallery">
+   <img src="img/IMG_0510.JPG" alt="Vista da Orla Domingos Canoeiro">
+   <img src="img/IMG_0603.JPG" alt="Paisagem do Rio Itacaiúnas">
+   <img src="img/brejo.png" alt="Área de brejo próxima ao rio">
+   <img src="img/Amapá 002.jpg" alt="Registro histórico do bairro Amapá">
+   <img src="img/figura 1.png" alt="Moradores do bairro Amapá">
+   <img src="img/figura 2.jpg" alt="Construção da Orla">
+   <img src="img/figura 3 .png" alt="Crianças brincando na área da Orla">
+   <img src="img/figura 4 .png" alt="Vista aérea do bairro">
+   <img src="img/figura 5.jpeg" alt="Encontro dos rios">
+   <img src="img/figura 6.jpeg" alt="Barcos no Rio Itacaiúnas">
+   <img src="img/jornal 2010.jpg" alt="Notícia de jornal sobre o bairro em 2010">
+   <img src="img/IMG_0570.JPG" alt="Estrutura da Orla">
+   <img src="img/IMG_0522.JPG" alt="Área de lazer da Orla">
+   <img src="img/IMG_0565.JPG" alt="Vista panorâmica da Orla">
+   <img src="img/correio 1997.png" alt="Notícia do Jornal Opinião de 1997">
+   <img src="img/2011.png" alt="Registro do bairro em 2011">
+        </div>
+    </div>
+</section>
 
-<blockquote class="left"style="text-align:center">
+<blockquote class="center"style="text-align:center">
   Sou Mirella Carvalho, jornalista em formação pela Universidade Federal do Sul e Sudeste do Pará (Unifesspa). O TCC que apresento, intitulado Por trás da Orla, consiste em uma série de reportagens multimídia que investigam o impacto da construção da Orla 'Domingos Canoeiro' no bairro Amapá, em Marabá-PA. A escolha deste trabalho, que busca comunicar as percepções e os impactos da construção da Orla é baseada na minha vivência como ex-moradora e frequentadora da região. Durante muito tempo, o bairro foi sinônimo de abandono, e os moradores, especialmente aqueles que vivem na parte “baixa”, estavam, segundo eles, esquecidos pelo poder público.
 Por meio de entrevistas e materiais audiovisuais, busquei entender como as mudanças no espaço afetaram a vida dos moradores e suas relações com o local. A pesquisa foi embasada no jornalismo de proximidade, metodologia que me permitiu aproximar as narrativas da realidade vivida pela comunidade.
 
 </blockquote>
-<figure>
-  <img src="img/FOTO MIRELLA.jpg" alt="" style="display: block; align-content: center; padding-left: 15px; padding-right: 15px; width: 400px;"/>
+<div class="author-container">
+    <figure>
+        <img src="img/FOTO MIRELLA.jpg" alt="Mirella Carvalho" class="author-image" />
+        <figcaption>Mirella Carvalho - Jornalista</figcaption>
     </figure>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://mynameismatthieu.com/WOW/dist/wow.min.js'></script>
+</div>
 
-        <script src="js/index.js"></script>
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Por trás da Orla</h3>
+                <p>Uma reportagem Longform sobre as percepções e impactos da Orla Domingos Canoeiro</p>
+            </div>
+            <div class="footer-links">
+                <h4>Seções</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#contexto">Contexto</a></li>
+                    <li><a href="#rio">O Rio</a></li>
+                    <li><a href="#historias">Histórias</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Compartilhe</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Por trás da Orla. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+
+<script src="js/index.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/lazy-loading.js"></script>
 <script src="js/owl-carousel/owl.carousel.js"></script>
 
 
